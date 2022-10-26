@@ -7,7 +7,13 @@ This has been tested on Ubuntu 20.04 vm (I'm using WMware Workstation).
 ## Pre-requisites
 
  1. **Two** or more virtual machines  running on **Ubuntu 20.04**.
- 2. One VM will act as the control plane or master node and the rest will be worker nodes. 
+ 2. One VM will act as the control plane or master node and the rest will be worker nodes.
+ 3. After successful initialization of the Kubernetes master, follow the kubeadm join commands output by the setup script on each agent machine
+
+## How to quickly Setup the cluster 
+ I've included 2 scripts preprequisites-k8s-setup.sh and master-k8s-setup.sh in the k8s-cluster-setup directory.
+ - Start a sudo shell context and Execute preprequisites-k8s-setup.sh script on each machine.
+ - Execute master-k8s-setup.sh script on the machine designated as Kubernetes master (not under sudo su as otherwise you'll setup K8S .kube/config permissions for root)
 
 ## Instructions (***run on each machine***)
 
@@ -105,3 +111,4 @@ kubeadm join (CP-IP):6443 --token ywb1yo.p1iuogfvqsov1jjcw     --discovery-token
 ```
 kubectl get nodes -o wide
 ```
+> Credites goes to [DaniBunny](https://github.com/microsoft/sql-server-samples/tree/master/samples/features/sql-big-data-cluster/deployment/kubeadm/ubuntu)

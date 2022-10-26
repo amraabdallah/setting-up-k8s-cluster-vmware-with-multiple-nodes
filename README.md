@@ -16,7 +16,7 @@ This has been tested on Ubuntu 20.04 vm (I'm using WMware Workstation).
  - Execute [master-k8s-setup.sh](./k8s-cluster-setup/master-k8s-setup.sh) script on the machine designated as Kubernetes master (not under sudo su as otherwise you'll setup K8S .kube/config permissions for root)
  - After successful initialization of the Kubernetes master, follow the kubeadm join commands output by the setup script on each agent machine
 ## Instructions (***run on each machine***)
-
+## This is for demoestration purposes if you executed the previous 2 scripts you don't have you follow these steps!
 - Assuming you just spun your vms so run the following to
   update the cache and update the packages
 ```

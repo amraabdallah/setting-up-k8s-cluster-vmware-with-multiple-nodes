@@ -111,4 +111,4 @@ kubeadm join (CP-IP):6443 --token ywb1yo.p1iuogfvqsov1jjcw     --discovery-token
 ```
 kubectl get nodes -o wide
 ```
-> Credites goes to [DaniBunny](https://github.com/microsoft/sql-server-samples/tree/master/samples/features/sql-big-data-cluster/deployment/kubeadm/ubuntu)
+> Credit goes to [DaniBunny](https://github.com/microsoft/sql-server-samples/tree/master/samples/features/sql-big-data-cluster/deployment/kubeadm/ubuntu)

@@ -13,5 +13,5 @@ spec:
             name: juice-shop-service
             port:
               number: 8080
-        path: /v1
+        path: /
         pathType: Prefix
